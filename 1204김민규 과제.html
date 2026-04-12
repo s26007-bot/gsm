@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>김민규</title>
+    <style>
+        
+        header {
+            background-color: white;
+            font-family: "궁서체";
+            padding: 10px;
+            text-align: center;
+        }
+
+        
+        figure img {
+            box-shadow: 10px 10px 20px; 
+            border-radius: 10px;
+        }
+        figcaption {
+            text-shadow: 2px 2px 5px gray; 
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        
+        summary {
+            color: blue;
+        }
+        button { 
+            padding: 5px 15px;
+        }
+
+        
+        form {
+            border: 3px dashed red; 
+            background-color: gray; 
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 20px; 
+            box-shadow: inset 2px 2px 10px red, 5px 5px 15px green; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>감스트 맞추기</h1>
+    </header>
+
+    <main>
+        <figure>
+            <img src="https://mblogthumb-phinf.pstatic.net/MjAxOTAzMTJfMjEw/MDAxNTUyMzkxNDQ0MDUz.B1ehkFGNvt4tMCdKSiQGbZaoFZXhglnivCsVNOSVDgcg.Vz4IO6UdKShqHkLqM9YW2joTUH7S8K6aTOABIBCiMdUg.GIF.wscotty/i14096449833.gif?type=w420" alt="프로필 이미지">
+            <figcaption>감스트</figcaption>
+        </figure>
+
+        <details>
+            <summary>더 알아보기</summary>
+            <p>김인직</p>
+        </details>
+
+        <hr>
+
+        <form>
+            <p>이름: <input type="text" placeholder="이름 입력"></p> 
+            <p>생년월일: <input type="date"></p> 
+            <p>연봉: <input type="number" placeholder="숫자 입력"></p> 
+            <p>성별: 
+                <input type="radio" name="gender" value="m"> 남
+                <input type="radio" name="gender" value="f"> 여
+            </p>
+
+            <p>관심분야: 
+                <input type="checkbox"> 황도먹방
+                <input type="checkbox"> 전화통신원
+                <input type="checkbox"> 챌린지먹방
+            </p>
+
+            <p>거주지역: 
+                <select>
+                    <option value="seoul">서울</option>
+                    <option value="busan">부산</option>
+                    <option value="gwangju">광주</option>
+                </select>
+            </p>
+
+            <button type="submit">제출하기</button> 
+        </form>
+    </main>
+
+    <footer>
+        <p>인직이귀여웜</p>
+    </footer>
+</body>
+</html>
