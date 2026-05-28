@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>메인 페이지</title>
+    <style>
+        * { box-sizing: border-box; }
+        header { background-color: navy; color:red;}
+        header a { color: red; margin-right: 15px; text-decoration: none; }
+        header a:hover { color: yellow; background-color: blue; }
+        .my-photo {
+            width: 150px;
+            height: 150px;
+            border: 5px solid black;
+            box-shadow: 3px 3px 5px gray;
+            background-color: lightgray;
+            overflow: hidden;
+        }
+        .my-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        footer { background-color: purple; color: red; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li><a href="projects.html">프로젝트 목록</a></li>
+            <li><a href="skills.html">기술 목록</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h1>메인 페이지</h1>
+        
+        <div class="my-photo"><img src="웹기.jpg" alt="내 사진"></div>
+
+        <h3>자기소개</h3>
+        <p>안녕하세요, 저는 꾸준한 열정을 기반으로 계속 발전하고 싶은 프로그래머 OOO 입니다. 저는 지금까지 다양한 웹 기술과 개발 언어에 깊은 관심을 가지고 탐구해 왔습니다. 새로운 지식을 배우고 이를 실제 코드로 구현해내는 과정에서 발생하는 여러 문제를 해결할 때 가장 큰 보람을 느낍니다. 앞으로도 성실한 자세로 저의 역량을 키워나가며 주변 동료들과 함께 협력하여 선한 영향력을 펼칠 수 있는 훌륭한 개발자가 되기 위해 매 순간 최선을 다해 노력하겠습니다.</p>
+
+        <h3>경력 사항</h3>
+        <ul>
+            <li>광주소프트웨어마이스터고등학교 재학</li>
+            <li>전공동아리 기능반 소속</li>
+            <li>선운중학교 졸업</li>
+            <li>선운초등학교 졸업</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>COPY GSM 김민규</p>
+    </footer>
+
+</body>
+</html>

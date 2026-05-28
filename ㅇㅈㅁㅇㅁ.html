@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>새 탭</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        /* 구글 로고 섹션 */
+        .logo {
+            margin-bottom: 38px;
+        }
+
+        /* 검색창 섹션 */
+        .search-container {
+            position: relative;
+            width: 100%;
+            max-width: 584px;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 12px 20px 12px 45px;
+            font-size: 16px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            outline: none;
+            box-shadow: none;
+            transition: box-shadow 0.2s;
+        }
+
+        .search-bar:hover, .search-bar:focus {
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            border-color: rgba(223,225,229,0);
+        }
+
+        /* 돋보기 아이콘 (간이 구현) */
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9aa0a6;
+        }
+
+        /* 바로가기 아이콘 섹션 */
+        .shortcuts {
+            margin-top: 28px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .shortcut-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 88px;
+            cursor: pointer;
+        }
+
+        .icon-circle {
+            width: 48px;
+            height: 48px;
+            background-color: #f1f3f4;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        .shortcut-name {
+            font-size: 12px;
+            color: #3c4043;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="272">
+    </div>
+
+    <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-bar" placeholder="Google 검색 또는 URL 입력">
+    </div>
+
+    <div class="shortcuts">
+        <div class="shortcut-item">
+            <div class="icon-circle">➕</div>
+            <span class="shortcut-name">바로가기 추가</span>
+        </div>
+    </div>
+
+</body>
+</html>
